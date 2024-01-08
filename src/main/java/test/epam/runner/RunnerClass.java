@@ -124,9 +124,9 @@ public class RunnerClass {
 
 		// task05 - language construct - 3. Tea Party
 		System.out.println("\ntask05 - language construct - Tea Party");
-		task05LanguageConstruct.teaParty(3, 8);//should be 0
-		task05LanguageConstruct.teaParty(6, 8);//should be 1
-		task05LanguageConstruct.teaParty(20, 6);//should be 2
+		task05LanguageConstruct.teaParty(3, 8);// should be 0
+		task05LanguageConstruct.teaParty(6, 8);// should be 1
+		task05LanguageConstruct.teaParty(20, 6);// should be 2
 
 		// task05 - language construct - 4. Lottery ticket
 		System.out.println("\ntask05 - language construct - Lottery ticket");
@@ -138,10 +138,23 @@ public class RunnerClass {
 		System.out.println(task05LanguageConstruct.blueTicket(5, 15, 5));
 
 		// task05 - language construct - 5. In Order
+		System.out.println("\ntask05 - language construct - In Order");
 		System.out.println(task05LanguageConstruct.inOrder(1, 1, 4, false));
 		System.out.println(task05LanguageConstruct.inOrder(1, 2, 5, false));
 		System.out.println(task05LanguageConstruct.inOrder(1, 1, 2, true));
 
+		// task05 - language construct - 6. Share Digit
+		System.out.println("\ntask05 - language construct - Share Digit");
+		System.out.println(task05LanguageConstruct.shareDigit(11, 11));
+
+		// task05 - language construct - 7. Sum Limit
+		System.out.println("\ntask05 - language construct - Share Digit");
+		System.out.println(task05LanguageConstruct.sumLimit(4, 6));
+
+		// task05 - language construct - 8. Sum Limit
+		System.out.println("\ntask05 - language construct - Share Digit");
+		System.out.println(task05LanguageConstruct.withoutString("Hello there", "He"));
+		System.out.println(task05LanguageConstruct.withoutString("THIS is a FISH", "IS"));
 
 	}
 

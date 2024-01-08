@@ -84,4 +84,42 @@ public class task05LanguageConstruct {
 		}
 	}
 
+	public static boolean shareDigit(int a, int b) {
+
+		boolean isSharing = false;
+
+		if ((a / 10 > 0) && (b / 10 > 0)) {// 23 62
+
+			isSharing = (a / 10) == (b / 10) || (a / 10) == (b % 10) || (a % 10) == (b / 10) || (a % 10) == (b % 10);
+
+		}
+
+		return isSharing;
+
+	}
+
+	public static int sumLimit(int a, int b) {
+
+		int toReturn = 1;
+
+		if (String.valueOf((a + b)).length() > String.valueOf(a).length()) {
+			toReturn = a;
+		} else
+			toReturn = (a + b);
+
+		return toReturn;
+	}
+
+	public static String withoutString(String base, String remove) {
+
+		String toReturn = "";
+
+		if (base.contains(remove)) {
+			toReturn = base.replaceAll(remove, "");
+		} else
+			toReturn = "ERROR! - String doesn't contain string to remove";
+
+		return toReturn;
+	}
+
 }
