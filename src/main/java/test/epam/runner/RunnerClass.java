@@ -148,13 +148,20 @@ public class RunnerClass {
 		System.out.println(task05LanguageConstruct.shareDigit(11, 11));
 
 		// task05 - language construct - 7. Sum Limit
-		System.out.println("\ntask05 - language construct - Share Digit");
+		System.out.println("\ntask05 - language construct - Sum Limit");
 		System.out.println(task05LanguageConstruct.sumLimit(4, 6));
 
 		// task05 - language construct - 8. Sum Limit
-		System.out.println("\ntask05 - language construct - Share Digit");
-		System.out.println(task05LanguageConstruct.withoutString("Hello there", "He"));
-		System.out.println(task05LanguageConstruct.withoutString("THIS is a FISH", "IS"));
+		System.out.println("\ntask05 - language construct - Without String");
+		System.out.println(task05LanguageConstruct.withoutString("THIS is a FISHaXaXa", "aXa"));
+		System.out.println(task05LanguageConstruct.withoutString("Hi HoHo", "Ho"));
+
+		// task05 - language construct - 9. Max Block
+		System.out.println("\ntask05 - language construct - Max Block");
+		System.out.println("Max Block size: Exp:"+(2)+"; Actual: "+task05LanguageConstruct.maxBlock("xyzz"));
+		System.out.println("Max Block size: Exp:"+(4)+"; Actual: "+task05LanguageConstruct.maxBlock("XXBBBbbxxXXXX"));
+		System.out.println("Max Block size: Exp:"+(1)+"; Actual: "+task05LanguageConstruct.maxBlock("X"));
+		System.out.println("Max Block size: Exp:"+(0)+"; Actual: "+task05LanguageConstruct.maxBlock(""));
 
 	}
 

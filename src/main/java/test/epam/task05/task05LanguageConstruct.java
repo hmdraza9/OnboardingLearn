@@ -112,14 +112,45 @@ public class task05LanguageConstruct {
 
 	public static String withoutString(String base, String remove) {
 
-		String toReturn = "";
+		String toReturn = base;
 
-		if (base.contains(remove)) {
-			toReturn = base.replaceAll(remove, "");
+		if (base.contains(remove) || base.contains(remove.toLowerCase()) || base.contains(remove.toUpperCase())) {
+			toReturn = toReturn.replaceAll(remove, "").replaceAll(remove.toUpperCase(), "")
+					.replaceAll(remove.toLowerCase(), "");
 		} else
-			toReturn = "ERROR! - String doesn't contain string to remove";
+			toReturn = base;
 
 		return toReturn;
+	}
+
+	public static int maxBlock(String str) {
+
+		int blockSize = 1;
+		int blockMaxSize = 1;
+		if(str.length()>0) {
+//			String maxRep = str.substring(0, 1);
+
+			for (int i = 0; i < str.length() - 1; i++) {
+//				System.out.println(str.charAt(i) + " " + str.charAt(i + 1) + " " + blockSize);
+				if (str.charAt(i) == str.charAt(i + 1)) {
+					blockSize = blockSize + 1;
+					if (blockMaxSize < blockSize) {
+						blockMaxSize = blockSize;
+//						maxRep = str.substring(i, i + 1);
+					}
+				}
+
+				else
+					blockSize = 1;
+			}
+
+//			System.out.println("Max Block size: " + blockMaxSize + " - " + maxRep);
+		}
+		else
+			blockMaxSize=0;
+
+		return blockMaxSize;
+
 	}
 
 }
