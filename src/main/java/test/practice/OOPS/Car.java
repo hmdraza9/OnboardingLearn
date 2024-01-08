@@ -7,7 +7,7 @@ public class Car {
 
 	private Engine engine;
 
-	Car(String color, int noOfTyres, String engineType, String engineName, String enginePower) {
+	public Car(String color, int noOfTyres, String engineType, String engineName, String enginePower) {
 
 
 		this.color = color;
