@@ -158,10 +158,19 @@ public class RunnerClass {
 
 		// task05 - language construct - 9. Max Block
 		System.out.println("\ntask05 - language construct - Max Block");
-		System.out.println("Max Block size: Exp:"+(2)+"; Actual: "+task05LanguageConstruct.maxBlock("xyzz"));
-		System.out.println("Max Block size: Exp:"+(4)+"; Actual: "+task05LanguageConstruct.maxBlock("XXBBBbbxxXXXX"));
-		System.out.println("Max Block size: Exp:"+(1)+"; Actual: "+task05LanguageConstruct.maxBlock("X"));
-		System.out.println("Max Block size: Exp:"+(0)+"; Actual: "+task05LanguageConstruct.maxBlock(""));
+		System.out.println("Max Block size: Exp:" + (2) + "; Actual: " + task05LanguageConstruct.maxBlock("xyzz"));
+		System.out.println(
+				"Max Block size: Exp:" + (4) + "; Actual: " + task05LanguageConstruct.maxBlock("XXBBBbbxxXXXX"));
+		System.out.println("Max Block size: Exp:" + (1) + "; Actual: " + task05LanguageConstruct.maxBlock("X"));
+		System.out.println("Max Block size: Exp:" + (0) + "; Actual: " + task05LanguageConstruct.maxBlock(""));
+
+		// task05 - language construct - 10. Sum Numbers
+		System.out.println("\ntask05 - language construct - Sum Numbers");
+		System.out.println(task05LanguageConstruct.sumNumbers("aa11b33"));// --> 44
+		System.out.println(task05LanguageConstruct.sumNumbers("abc123x345yz111iurwe10000"));// --> 10579
+		System.out.println(task05LanguageConstruct.sumNumbers("5$$1;;1!!"));// --> 7
+		System.out.println(task05LanguageConstruct.sumNumbers("hdjekhdkj"));// --> 0
+		System.out.println(task05LanguageConstruct.sumNumbers(""));// --> 0
 
 	}
 

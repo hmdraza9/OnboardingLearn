@@ -127,7 +127,7 @@ public class task05LanguageConstruct {
 
 		int blockSize = 1;
 		int blockMaxSize = 1;
-		if(str.length()>0) {
+		if (str.length() > 0) {
 //			String maxRep = str.substring(0, 1);
 
 			for (int i = 0; i < str.length() - 1; i++) {
@@ -145,12 +145,45 @@ public class task05LanguageConstruct {
 			}
 
 //			System.out.println("Max Block size: " + blockMaxSize + " - " + maxRep);
-		}
-		else
-			blockMaxSize=0;
+		} else
+			blockMaxSize = 0;
 
 		return blockMaxSize;
 
+	}
+
+	public static int sumNumbers(String numString) {
+		int numAppendVal = 0;
+		int numSum = 0;
+		if (numString.length() > 0) {
+			String[] numStringArr = numString.split("");
+
+//					for (String str : numString.split("")) {
+			for (int i = 0; i < numStringArr.length; i++) {
+				// System.out.print(
+				// "numStringArr: " + numStringArr[i] + ", " +
+				// Character.isDigit(numStringArr[i].charAt(0)) + ", ");
+				if (Character.isDigit(numStringArr[i].charAt(0))) {
+					numAppendVal = numAppendVal * 10 + Integer.parseInt(numStringArr[i]);
+//							numSum = numSum + numAppendVal;
+					// System.out.print("\tnumAppend: " + numAppendVal);
+
+					if (i == (numString.length()) - 1) {
+						numSum = numSum + numAppendVal;
+					}
+				} else {
+					// System.out.print("String: " + str + ", is digit: " +
+					// Character.isDigit(str.charAt(0)));
+					numSum = numSum + numAppendVal;
+					numAppendVal = 0;
+					// System.out.print("\tnumAppend: " + numAppendVal);
+					// System.out.print(",");
+				}
+				// System.out.println("\tNum Sum: " + numSum);
+			}
+		}
+
+		return numSum;
 	}
 
 }
