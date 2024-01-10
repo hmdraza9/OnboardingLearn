@@ -2,11 +2,12 @@ package test.epam.task06;
 
 public class Task06LoopsArray {
 
-	public static int maxSpan(int[] nums) {
+	public static void maxSpan(int[] nums) {
 
-		System.out.println("Max Span: " + (nums.length - 1));
-
-		return nums.length - 1;
+		/*
+		 * maxSpan([1, 2, 1, 1, 3]) â†’ 4 maxSpan([1, 4, 2, 1, 4, 1, 4]) â†’ 6
+		 * maxSpan([1, 4, 2, 1, 4, 4, 4]) â†’ 6
+		 */
 
 	}
 
