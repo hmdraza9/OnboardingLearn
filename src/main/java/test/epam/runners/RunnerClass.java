@@ -1,4 +1,4 @@
-package test.epam.runner;
+package test.epam.runners;
 
 import test.epam.StringArray.ArrayFindMissingNum;
 import test.epam.StringArray.ArrayMinMaxClass;
