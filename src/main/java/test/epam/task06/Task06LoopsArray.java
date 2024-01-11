@@ -3,7 +3,6 @@ package test.epam.task06;
 public class Task06LoopsArray {
 
 	public static void maxSpan(int[] nums) {
-
 		int span = 0;
 
 		for (int i = 0; i < nums.length; i++) {
@@ -62,18 +61,4 @@ public class Task06LoopsArray {
 		return isBalanced;
 
 	}
-
-	private static int sumArray(int[] numArr, int startIndex, int endIndex) {
-
-		int sum = 0;
-
-		for (int i = startIndex; i <= endIndex; i++) {
-
-			sum = sum + numArr[i];
-
-		}
-
-		return sum;
-	}
-
 }
