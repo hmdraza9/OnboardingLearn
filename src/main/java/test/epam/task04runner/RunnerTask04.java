@@ -6,8 +6,7 @@ public class RunnerTask04 {
 
 	public static void main(String[] args) {
 
-		System.out.println("Is set of parentheses balanced?: "+task04Class.ParenthesesBalanced("[{a--(())}]"));
-
+		System.out.println("Is set of parentheses balanced?: " + task04Class.ParenthesesBalanced("[{a--(())}]"));
 	}
 
 }
