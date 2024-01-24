@@ -17,6 +17,10 @@ public class DesPatternTask01Runner {
 		System.out.println(CandyMaker.getInstance().hashCode());
 		System.out.println(CandyMaker.getInstance().hashCode());
 
+		// Multi thread
+
+		Multithread.mainMultithreadingDemo(20);
+
 	}
 
 }
