@@ -4,13 +4,15 @@ import org.openqa.selenium.WebDriver;
 
 public class DpDemoTask01 {
 
-	WebDriver driver;
+	private static WebDriver driver;
 
 	public static void main(String[] args) {
 
+		DpDemoTask01.initiateBrowser("chrome");
+
 	}
 
-	public WebDriver initiateBrowser(String browserName) {
+	private static WebDriver initiateBrowser(String browserName) {
 		switch (browserName) {
 
 		case "chrome":
