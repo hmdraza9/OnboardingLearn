@@ -8,6 +8,16 @@ public class DuckSimulator {
 		customDuck.display();
 		customDuck.performFly();
 		customDuck.performQuack();
+System.out.println("*****************");
+		customDuck = new SiberianDuck();
+		customDuck.display();
+		customDuck.performFly();
+		customDuck.performQuack();
+System.out.println("*****************");
+		customDuck = new ToyDuck();
+		customDuck.display();
+		customDuck.performFly();
+		customDuck.performQuack();
 
 	}
 
