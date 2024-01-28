@@ -3,6 +3,7 @@ package design.pattern.CameraAppStrategic;
 public abstract class CameraApp {
 
 	EditPhotoBehaviour editPhoto;
+	SharePhotoBehaviour sharePhoto;
 
 	public void clickPhoto() {
 		System.out.println("Photo clicked.");
@@ -12,9 +13,7 @@ public abstract class CameraApp {
 		System.out.println("Photo saved.");
 	}
 
-	public void sharePhoto() {
-		System.out.println("Photo shared");
-	}
+	public abstract void sharePhoto();
 
 	public abstract void editPhoto();
 
