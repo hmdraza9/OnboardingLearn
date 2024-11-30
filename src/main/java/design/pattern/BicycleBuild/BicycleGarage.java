@@ -1,13 +1,15 @@
 package design.pattern.BicycleBuild;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class BicycleGarage {
 
-	private List<Accessory> accessories;
+	private Set<Accessory> accessories;
 	private String baseFrame;
-	private List<Fitting> fittings;
+	private Set<Fitting> fittings;
 
 	private BicycleGarage(Builder builder) {
 		this.accessories = builder.accessories;
@@ -23,7 +25,7 @@ public class BicycleGarage {
 		Helmet, Toolkit, Lights, Carrier, Bell
 	}
 
-	public List<Accessory> getAccessories() {
+	public Set<Accessory> getAccessories() {
 		return accessories;
 	}
 
@@ -31,7 +33,7 @@ public class BicycleGarage {
 		return baseFrame;
 	}
 
-	public List<Fitting> getFittings() {
+	public Set<Fitting> getFittings() {
 		return fittings;
 	}
 
@@ -41,9 +43,9 @@ public class BicycleGarage {
 			this.baseFrame = baseFrame;
 		}
 
-		private List<Accessory> accessories = new ArrayList<>();
+		private Set<Accessory> accessories = new HashSet<>();
 		private String baseFrame;
-		private List<Fitting> fittings = new ArrayList<>();
+		private Set<Fitting> fittings = new HashSet<>();
 
 		public Builder accessories(Accessory accessories) {
 			this.accessories.add(accessories);
