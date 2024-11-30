@@ -5,9 +5,9 @@ import java.util.List;
 
 public class BicycleGarage {
 
-	private List<String> accessories;
+	private List<Accessory> accessories;
 	private String baseFrame;
-	private List<String> fittings;
+	private List<Fitting> fittings;
 
 	private BicycleGarage(Builder builder) {
 		this.accessories = builder.accessories;
@@ -15,7 +15,15 @@ public class BicycleGarage {
 		this.fittings = builder.fittings;
 	}
 
-	public List<String> getAccessories() {
+	public enum Fitting{
+		Gears, Disc_Brakes, Handle, Pedals
+	}
+
+	public enum Accessory{
+		Helmet, Toolkit, Lights, Carrier, Bell
+	}
+
+	public List<Accessory> getAccessories() {
 		return accessories;
 	}
 
@@ -23,7 +31,7 @@ public class BicycleGarage {
 		return baseFrame;
 	}
 
-	public List<String> getFittings() {
+	public List<Fitting> getFittings() {
 		return fittings;
 	}
 
@@ -33,11 +41,11 @@ public class BicycleGarage {
 			this.baseFrame = baseFrame;
 		}
 
-		private List<String> accessories = new ArrayList<String>();
+		private List<Accessory> accessories = new ArrayList<>();
 		private String baseFrame;
-		private List<String> fittings = new ArrayList<String>();
+		private List<Fitting> fittings = new ArrayList<>();
 
-		public Builder accessories(String accessories) {
+		public Builder accessories(Accessory accessories) {
 			this.accessories.add(accessories);
 			return this;
 		}
@@ -47,7 +55,7 @@ public class BicycleGarage {
 			return this;
 		}
 
-		public Builder fittings(String fittings) {
+		public Builder fittings(Fitting fittings) {
 			this.fittings.add(fittings);
 			return this;
 		}

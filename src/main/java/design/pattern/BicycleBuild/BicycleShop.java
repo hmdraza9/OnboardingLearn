@@ -11,9 +11,10 @@ public class BicycleShop {
 	}
 
 	public BicycleGarage getBicycleFitter(String[] args) {
-		BicycleGarage.Builder builder = new BicycleGarage.Builder("Basic Cycle").accessories("helmet")
-				.accessories("toolkit").accessories("lights").accessories("lights").accessories("lights").accessories("lights").accessories("carrier").fittings("gears").fittings("gears").fittings("gears")
-				.fittings("disc brake");
+		BicycleGarage.Builder builder = new BicycleGarage.Builder("Basic Cycle").accessories(BicycleGarage.Accessory.Helmet)
+				.accessories(BicycleGarage.Accessory.Toolkit).accessories(BicycleGarage.Accessory.Lights).accessories(BicycleGarage.Accessory.Lights).accessories(BicycleGarage.Accessory.Lights).accessories(BicycleGarage.Accessory.Lights)
+				.accessories(BicycleGarage.Accessory.Carrier).fittings(BicycleGarage.Fitting.Gears).fittings(BicycleGarage.Fitting.Gears).fittings(BicycleGarage.Fitting.Gears)
+				.fittings(BicycleGarage.Fitting.Disc_Brakes);
 
 		return builder.build();
 
